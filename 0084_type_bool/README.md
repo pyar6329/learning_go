@@ -30,14 +30,14 @@ answer: [main.go](./main.go)
 
 ## 真理値表を作成し埋めて下さい
 
-| a     | b     | c     | output |
-| ----- | ----- | ----- | ------ |
-| true  | true  | true  | true   |
-| true  | true  | false | true   |
-| true  | false | true  | false  |
-| true  | false | false | true   |
-| false | true  | true  | false  |
-| false | true  | false | true   |
-| false | false | true  | false  |
-| false | false | false | true   |
+| a     | b     | c     | a && b | !c    | output |
+| ----- | ----- | ----- | ------ | ----- | ------ |
+| true  | true  | true  | true   | false | true   |
+| true  | true  | false | true   | true  | true   |
+| true  | false | true  | false  | false | false  |
+| true  | false | false | false  | true  | true   |
+| false | true  | true  | false  | false | false  |
+| false | true  | false | false  | true  | true   |
+| false | false | true  | false  | false | false  |
+| false | false | false | false  | true  | true   |
 
